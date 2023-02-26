@@ -1,0 +1,7 @@
+Faça um programa em assembly modo real que recebe 
+uma string do teclado e guarda essa string numa região 
+da memória. Logo em seguida execute uma interrupção 40h 
+que recebe um parâmetro da pilha, nesse caso o endereço 
+(apenas o offset) da string recém guardada, e imprime. 
+Tal interrupção deverá ser implementada por você e 
+devidamente configurada na IVT.
