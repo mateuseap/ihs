@@ -1,0 +1,2 @@
+Modificar o código base enviado em anexo para entrar 
+no modo protegido e printar na tela “hello protected mode!”
