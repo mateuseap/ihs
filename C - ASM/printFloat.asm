@@ -1,9 +1,9 @@
-# How to run this code:
-#   > nasm -f elf printFloat.asm
-#   > gcc -m32 -o printFloat printFloat.o
-#   > ./printFloat 
-#
-# Make sure you have gcc-multilib installed!
+; How to run this code:
+;   > nasm -f elf printFloat.asm
+;   > gcc -m32 -o printFloat printFloat.o
+;   > ./printFloat 
+;
+; Make sure you have gcc-multilib installed!
 
 extern printf
 extern scanf
