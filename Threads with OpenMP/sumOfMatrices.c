@@ -1,8 +1,17 @@
+/*
+ This code uses OpenMP!
+
+ How to run it:
+    > gcc - fopenmp sumOfMatrices.c -o sumOfMatrices
+    > ./sumOfMatrices
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
 
 int main() {
+
     int A[2][2] = {{1,2},{3,4}};
     int B[2][2] = {{5,6},{7,8}};
     int C[2][2];
