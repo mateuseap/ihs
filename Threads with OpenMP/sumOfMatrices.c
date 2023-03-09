@@ -2,7 +2,7 @@
  This code uses OpenMP!
 
  How to run it:
-    > gcc - fopenmp sumOfMatrices.c -o sumOfMatrices
+    > gcc -fopenmp sumOfMatrices.c -o sumOfMatrices
     > ./sumOfMatrices
 */
 

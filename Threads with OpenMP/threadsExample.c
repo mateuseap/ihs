@@ -2,7 +2,7 @@
  This code uses OpenMP!
 
  How to run it:
-    > gcc - fopenmp threadsExample.c -o threadsExample
+    > gcc -fopenmp threadsExample.c -o threadsExample
     > ./threadsExample
 */
 
