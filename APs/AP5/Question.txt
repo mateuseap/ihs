@@ -1,0 +1,5 @@
+Faça um programa em C usando OpenMP para calcular em série e 
+paralelo a multiplicação de matrizes de ordem N (definida no código) 
+e a quantidade de valores pares que existem na matriz resultado. 
+Printando no programa quanto tempo durou e a quantidade de 
+números pares de cada execução.
