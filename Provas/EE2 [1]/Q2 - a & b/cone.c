@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern float cone(float *vol, float r, float h);
+extern void cone(float *vol, float r, float h);
 
 int main() {
     float vol, r, h;
