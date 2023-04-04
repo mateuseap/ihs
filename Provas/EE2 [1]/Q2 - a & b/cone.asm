@@ -1,10 +1,8 @@
-section .data
+SECTION .data
+    three dq 3.0
 
-three dq 3.0
-
-section .text
-
-global cone
+SECTION .text
+    global cone
 
 cone:
     ; Criando um novo stack frame
@@ -24,7 +22,7 @@ cone:
     fmulp st1, st0      ; h * r² * PI em st0
     fld qword[three]    ; 3.0 em st0, h * r² * PI em st1
     fdivr st1           ; (h * r² * PI)/3.0 em st0, h * r² * PI em st1
-    fstp dword[eax]
+    fstp dword[eax]     ; carregando o valor calculado no ponteiro vol
 
     ; Destruindo o stack frame
     mov esp, ebp
