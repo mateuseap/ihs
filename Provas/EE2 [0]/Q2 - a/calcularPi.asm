@@ -1,15 +1,13 @@
 extern scanf
 
-section .data
+SECTION .data
+    scanfParams db "%d", 0x00
+    two dq 2.0
+    sum dq 0.0
+    n dd 0
 
-scanfParams db "%d", 0x00
-two dq 2.0
-sum dq 0.0
-n dd 0
-
-section .text
-
-global calcularPi
+SECTION .text
+    global calcularPi
 
 calcularPi:
     ; Criando um novo stack frame
