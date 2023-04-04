@@ -68,7 +68,7 @@ calcularPi:
     fld qword[sum]   ; sum em st0, 1 em st1
     faddp st1, st0   ; sum + 1 em st0
     fst qword[sum]   ; valor da variável sum atualizado
-    fst              ; pilha zerada
+    fstp             ; pilha zerada
 
     mov eax, dword[ebp + 8]   ; Passando o endereço do ponteiro 'pi' para eax
     fstp dword[eax]           ; Carregando o valor de st0 no ponteiro 'pi'
