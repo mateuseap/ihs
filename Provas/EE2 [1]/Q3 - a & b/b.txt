@@ -1,0 +1,11 @@
+Pergunta:
+    Acrescente o código no local indicado de modo que o código execute corretamente
+    (pode também acrescentar cláusulas nas diretivas parallel e for se achar necessário).
+    Explique porque o código funcionará corretamente.
+
+Resposta:
+    A inicialização do vetor está funcionando corretamente nesse código porque 
+    a diretiva #pragma omp single é utilizada para garantir que somente uma thread 
+    execute a região crítica de inicialização do vetor, enquanto as outras esperam. 
+    Dessa forma, evita-se que várias threads acessem e modifiquem a mesma posição 
+    do vetor simultaneamente, o que poderia gerar inconsistências e resultados incorretos.

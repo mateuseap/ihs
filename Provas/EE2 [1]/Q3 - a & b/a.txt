@@ -1,0 +1,13 @@
+Pergunta: 
+    Se o código para a inicialização do vetor for colocado no lugar indicado
+    sem usar nenhuma diretiva ou função do OpenMP, o que acontecerá? Justifique
+    a sua resposta.
+
+Resposta:
+    Se o código para a inicialização do vetor for colocado sem usar nenhuma diretiva 
+    ou função do OpenMP, todas as threads da região paralela irão executar o laço de 
+    inicialização simultaneamente, o que pode levar a condições de corrida (race conditions) 
+    e a resultados incorretos. Isso ocorre porque todas as threads iriam tentar escrever nos 
+    mesmos elementos do vetor, sem nenhuma coordenação ou sincronização.
+
+
